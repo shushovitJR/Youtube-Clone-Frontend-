@@ -1,7 +1,7 @@
 
 
 
-.vid-grid{
+/* .vid-grid{
     width: 100%;
     margin: 0 0 0 10%;
     
@@ -13,7 +13,16 @@
     column-gap: 20px;
     row-gap:45px;
     background-color: #f9f9f9;
+} */
+.vid-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 @media (max-width:750px){
     .vid-grid{
         grid-template-columns: 1fr 1fr;
